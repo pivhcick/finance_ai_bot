@@ -10,8 +10,8 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 # Инициализация клиентов
-supabase_client = supabase.create_client(os.getenv('https://qcvralbhkfbmqohjhcni.supabase.co'), os.getenv('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFjdnJhbGJoa2ZibXFvaGpoY25pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUyMjU2OTcsImV4cCI6MjA2MDgwMTY5N30.kUbsoDzIHQTbijcCCKLS-BwHRfomEVD3NtEwrX6FfLY'))
-openai_client = OpenAI(api_key=os.getenv('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'))
+supabase_client = supabase.create_client(os.getenv('https://qcvralbhkfbmqohjhcni.supabase.co'), os.getenv(''))
+openai_client = OpenAI(api_key=os.getenv(''))
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.effective_user
